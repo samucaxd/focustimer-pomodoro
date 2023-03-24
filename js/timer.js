@@ -33,15 +33,12 @@ export default function Timer({
                 stopAllSounds()
                 return
             }
-
             if(seconds <= 0) {
                 seconds = 60
                 --minutes
             }
     
-    
             updateDisplay(minutes, String(seconds -1))
-            
             countdown()
         }, 1000)
     }
